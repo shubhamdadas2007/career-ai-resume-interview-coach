@@ -151,7 +151,7 @@ export const DEFAULT_RESUME = {
         {
           id: 'exp-2',
           role: 'Software Engineer',
-          company: 'Wipro Limited',
+          company: 'Infosys Technologies',
           location: 'Pune, India',
           dates: 'July 2019 - May 2021',
           bullets: [
@@ -790,6 +790,22 @@ export const DEMO_JOB_APPLICATIONS = [
     logoLetter: 'N',
     accentColor: '#EF4444',
     isDemo: true
+  },
+  {
+    id: 'demo-app-microsoft',
+    company: 'Microsoft',
+    location: 'Redmond, WA (Hybrid)',
+    role: 'Software Engineer II',
+    stage: 'offer',
+    priority: 'high',
+    priorityLabel: 'Offer Received',
+    appliedDate: '3d ago',
+    stageProgress: 'Offer Extended',
+    progressPercent: 100,
+    nextStep: 'Review compensation package & sign offer letter',
+    logoLetter: 'M',
+    accentColor: '#10B981',
+    isDemo: true
   }
 ];
 
@@ -808,7 +824,7 @@ export const DEFAULT_SESSIONS = [
   },
   {
     id: 'sess-02',
-    role: 'Backend Developer - Wipro',
+    role: 'Backend Developer - Infosys',
     category: 'System Design & APIs',
     date: 'Aug 24, 2026',
     score: 88,
