@@ -501,6 +501,7 @@ class AppController {
   }
 
   navigateTo(viewName) {
+    if (!this.contentBody) this.contentBody = document.getElementById('main-content-body');
     this.currentView = viewName;
     store.setActiveView(viewName);
 
@@ -838,3 +839,10 @@ class AppController {
 
 export const appController = new AppController();
 window.appController = appController;
+
+// Guaranteed auto-initialization across all browsers & DOM ready states:
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => appController.init());
+} else {
+  appController.init();
+}
