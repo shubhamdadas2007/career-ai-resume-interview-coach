@@ -7,6 +7,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 from .models import (
     ResumeAnalysisResponse, InterviewStartRequest, InterviewStartResponse,
     InterviewQuestion, InterviewNextQuestionRequest,
